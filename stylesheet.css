@@ -1,18 +1,30 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(bg.jpeg) no-repeat;
+    background: url(bg.jpg) no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    grid-gap: 10px;
 }
 .box{
-  width: 450px;
   background: rgba(0, 0, 0, 0.4);
   padding: 40px;
   text-align: center;
-  margin: auto;
-  margin-top: 5%;
+  margin: 30px;
   color: white;
   font-family: 'Century Gothic',sans-serif;
+  height: 100%;
+  
+}
+.box1{
+  grid-row: 1;
+  grid-column: 1;
+}
+.box2{
+  grid-row: 1;
+  grid-column: 2;
 }
 .box-img{
   border-radius: 50%;
@@ -22,8 +34,11 @@ body{
 a:link{
   color: white;
 }
-a:hoover{
-  color: rgb(104, 152, 182);
+a:visited{
+  color: white;
+}
+a:hover{
+  color: rgba(197, 202, 205, 0.389);
 }
 #name{
   font-size: 40px;
@@ -32,33 +47,17 @@ a:hoover{
   color: white;
 }
 .box h5{
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 3px;
   font-weight: 100;
 }
-.box p{
+
+.content{
+  font-style: normal;
+  font-size: medium;
   text-align: justify;
 }
-ul{
-  margin: 0;
-  padding: 0;
-}
-.box li{
-  display: inline-block;
-  margin: 6px;
-  list-style: none;
-}
-.box li a{
-  color: white;
-  text-decoration: none;
-  font-size: 60px;
-  transition: all ease-in-out 250ms;
-}
-.box li a:hover{
-  color: #b9b9b9;
-}
 
-.description{
-  font-style: normal;
-  font-size: small;
+li{
+  text-align: left;
 }
